@@ -18,9 +18,9 @@ public class SparseArray {
     public int[][] convertArr2ToSparseArr2(int[][] arr2) {
         // 统计有多少个非零的值
         int sum = 0;
-        for (int i = 0; i < arr2.length; i++) {
-            for (int j = 0; j < arr2[i].length; j++) {
-                if (arr2[i][j] != 0) {
+        for (int[] ints : arr2) {
+            for (int anInt : ints) {
+                if (anInt != 0) {
                     sum++;
                 }
             }
